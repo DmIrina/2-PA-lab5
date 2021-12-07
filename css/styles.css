@@ -1,0 +1,104 @@
+buttbody {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Header  */
+
+header {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+select {
+    width: 200px;
+    padding: 3px 3px;
+    margin: 3px 3px;
+    background: rgba(255, 255, 255, .2);
+}
+
+
+/* Main  */
+main {
+
+    /* color: white; */
+    /*    background-image: url("../img/bg.jpg");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+}
+
+
+/* Buttons to change position */
+.statements {
+    width: 400px;
+    height: 100px;
+    color: cornflowerblue;
+
+}
+
+/* Buttons to change position */
+.buttons {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons input {
+    width: 200px;
+    padding: 3px 3px;
+    margin: 3px 3px;
+}
+
+
+/* Game Board*/
+.board {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 3px;
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px;
+    background-color: #100;
+    border: solid;
+}
+
+.square {
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.square-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(28, 17, 70, 0.644);
+    display: none;
+    z-index: 10;
+}
+
+
+/* Endgame screen */
+.winner-screen {
+    /* position: absolute; */
+    display: none;
+    flex-direction: column;
+}
+
+#retry-button {
+    width: 200px;
+    padding: 3px 3px;
+    margin: 3px 3px;
+}
